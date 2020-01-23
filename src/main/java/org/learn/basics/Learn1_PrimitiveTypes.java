@@ -12,14 +12,14 @@ package org.learn.basics;
  * 'Overflow' in case of maximum and 'Underflow' in case of minimum.
  * This behaviour is called integer-wraparound.
  */
-public class Learn1_OverflowUnderflow {
+public class Learn1_PrimitiveTypes {
     public static void main(String[] args) {
         int myMaxIntValue = Integer.MAX_VALUE;
         int myMinIntValue = Integer.MIN_VALUE;
         System.out.println("myMaxIntValue is : " + myMaxIntValue); // output: 2147483647
         System.out.println("myMinIntValue is : " + myMinIntValue); // output: -2147483648
-        System.out.println("busted max value is : " + (myMaxIntValue + 1)); // output: -2147483648
-        System.out.println("busted min value is : " + (myMinIntValue - 1)); // output: 2147483647
+        System.out.println("busted max value is : " + (myMaxIntValue + 1)); // output: -2147483648 (Overflow)
+        System.out.println("busted min value is : " + (myMinIntValue - 1)); // output: 2147483647 (Underflow)
 
         int myMaxIntValue2 = 2147483647; // Here given max int value which is acceptable
         int myMinIntValue2 = -2147483648; // Here given min int value which is acceptable
@@ -57,5 +57,29 @@ public class Learn1_OverflowUnderflow {
         for (int index = 0; index < 4; index++, intValue++) {
             System.out.println(intValue);
         }
+
+        byte myMaxByteValue = Byte.MAX_VALUE;
+        byte myMinByteValue = Byte.MIN_VALUE;
+        System.out.println("myMaxByteValue is : " + myMaxByteValue); // output: 127
+        System.out.println("myMinByteValue is : " + myMinByteValue); // output: -128
+
+        short myMaxShortValue = Short.MAX_VALUE;
+        short myMinShortValue = Short.MIN_VALUE;
+        System.out.println("myMaxShortValue is : " + myMaxShortValue); // output: 32767
+        System.out.println("myMinShortValue is : " + myMinShortValue); // output: -32768
+
+        long myMaxLongValue = Long.MAX_VALUE;
+        long myMinLongValue = Long.MIN_VALUE;
+        System.out.println("myMaxLongValue is : " + myMaxLongValue); // output: 9223372036854775807
+        System.out.println("myMinLongValue is : " + myMinLongValue); // output: -9223372036854775808
+
+        long myLongValue1 = 2147483647;
+        /**
+         * if you declare long value without suffix 'L', it consider under Integer value.
+         * to check uncomment the below line and compile the code.
+         */
+        //long myLongValue2 = 2147483648; //Integer number too large
+        long myLongValue3 = 2147483648674576L;
+        System.out.println("myLongValue3 is : "+ myLongValue3);
     }
 }
