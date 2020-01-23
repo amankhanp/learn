@@ -31,8 +31,18 @@ public class Learn1_OverflowUnderflow {
         get an compile time error saying Integer value is too large.
         for checking uncomment the below 2 lines and compile the code.
          */
-        //int myMaxIntValue3 = 2147483648;
-        //int myMinIntValue3 = -2147483649;
+        //int myMaxIntValue3 = 2147483648; //Integer value is too large.
+        //int myMinIntValue3 = -2147483649; //Integer value is too large.
+
+        /**
+         * In Java SE 7 and later, any number of underscore characters (_) can appear anywhere
+         * between digits in a numerical literal, which can improve the readability of your code.
+         * for better understanding of underscore between the decimals follow the java.doc
+         * https://docs.oracle.com/javase/8/docs/technotes/guides/language/underscores-literals.html
+         */
+        int myValue1 = 1_190;
+        int myValue2 = 1_0;
+        System.out.println("Values with underscore between digits after sum is : " + (myValue1 + myValue2));
 
         /**
          * Another great example to understand Overflow
