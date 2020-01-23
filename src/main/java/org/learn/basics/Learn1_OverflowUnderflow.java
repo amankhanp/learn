@@ -16,15 +16,15 @@ public class Learn1_OverflowUnderflow {
     public static void main(String[] args) {
         int myMaxIntValue = Integer.MAX_VALUE;
         int myMinIntValue = Integer.MIN_VALUE;
-        System.out.println("myMaxIntValue is : "+ myMaxIntValue ); // output: 2147483647
-        System.out.println("myMinIntValue is : "+ myMinIntValue ); // output: -2147483648
-        System.out.println("busted max value is : "+ (myMaxIntValue + 1)); // output: -2147483648
-        System.out.println("busted min value is : "+ (myMinIntValue - 1)); // output: 2147483647
+        System.out.println("myMaxIntValue is : " + myMaxIntValue); // output: 2147483647
+        System.out.println("myMinIntValue is : " + myMinIntValue); // output: -2147483648
+        System.out.println("busted max value is : " + (myMaxIntValue + 1)); // output: -2147483648
+        System.out.println("busted min value is : " + (myMinIntValue - 1)); // output: 2147483647
 
         int myMaxIntValue2 = 2147483647; // Here given max int value which is acceptable
         int myMinIntValue2 = -2147483648; // Here given min int value which is acceptable
-        System.out.println("myMaxIntValue2 : "+ myMaxIntValue2 ); // output: 2147483647
-        System.out.println("myMinIntValue2 : "+ myMinIntValue2 ); // output: -2147483648
+        System.out.println("myMaxIntValue2 : " + myMaxIntValue2); // output: 2147483647
+        System.out.println("myMinIntValue2 : " + myMinIntValue2); // output: -2147483648
 
         /*
         If you have given 'int' value more than its max or less then its min you will
@@ -43,10 +43,9 @@ public class Learn1_OverflowUnderflow {
          * then overflow take place and output will be -2147483648 again
          * after increment output is -2147483647.
          */
-        int intValue = Integer.MAX_VALUE-1;
-        for(int index = 0; index < 4; index++, intValue++) {
+        int intValue = Integer.MAX_VALUE - 1;
+        for (int index = 0; index < 4; index++, intValue++) {
             System.out.println(intValue);
         }
-
     }
 }
