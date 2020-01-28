@@ -4,6 +4,10 @@ package org.learn.basics;
  * In this class we are going to understand better about type value overflow
  * and underflow.
  *
+ * also few examples related to 'int,byte,short and long' they are also know
+ * as 'Whole numbers'.
+ * note: Java treats 'int' as a default whole number.
+ *
  * Simply we are create int type variables and check its max and min value.
  * then to try to add max + 1 and min -1.
  *
@@ -12,7 +16,7 @@ package org.learn.basics;
  * 'Overflow' in case of maximum and 'Underflow' in case of minimum.
  * This behaviour is called integer-wraparound.
  */
-public class Learn1_PrimitiveTypes {
+public class Learn1_IntByteShortLongPrimitiveTypes {
     public static void main(String[] args) {
         int myMaxIntValue = Integer.MAX_VALUE;
         int myMinIntValue = Integer.MIN_VALUE;
