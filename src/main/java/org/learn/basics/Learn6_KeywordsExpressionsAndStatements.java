@@ -10,7 +10,7 @@ package org.learn.basics;
  *
  * Read more: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
  */
-public class Learn6_KeywordAndExpressions {
+public class Learn6_KeywordsExpressionsAndStatements {
 
     public static void main(String[] args) {
         /**
@@ -30,8 +30,22 @@ public class Learn6_KeywordAndExpressions {
          * is an expression.
          */
         int tempValue = 50;
-        if (tempValue == 50){
+        if (tempValue == 50) {
             System.out.println("This is also an Expression");
         }
+
+        /**
+         * Example-3 is about Statements.
+         */
+        int myVariable = 10; //complete syntax is a statement.
+        myVariable++; //it is also a statement.
+        myVariable--; //a statement.
+        System.out.println("complete line is a statement");
+        //One Statement in multiple lines.
+        System.out.println("Whole" +
+                "syntax" +
+                "is a statement");
+        //Multiple Statements
+        int myVariable2 = 20; myVariable++; System.out.println("This is also a statement");
     }
 }
