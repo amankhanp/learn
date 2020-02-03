@@ -42,8 +42,8 @@ public class Learn6_KeywordsExpressionsAndStatements {
         myVariable--; //a statement.
         System.out.println("complete line is a statement");
         //One Statement in multiple lines.
-        System.out.println("Whole" +
-                "syntax" +
+        System.out.println("Whole " +
+                " syntax " +
                 "is a statement");
         //Multiple Statements
         int myVariable2 = 20; myVariable++; System.out.println("This is also a statement");
