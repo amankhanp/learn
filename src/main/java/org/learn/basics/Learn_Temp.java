@@ -76,6 +76,28 @@ public class Learn_Temp {
         }
     }*/
 
+    /*public static void isPalindrome(int number){
+        if(number < 0){
+            number *= -1;
+        }
+        int reverse = 0;
+        int lastDigit;
+        int number1 = number;
+        while(number > 0){
+            lastDigit = number % 10;
+            reverse = reverse * 10;
+            reverse += lastDigit;
+            number = number / 10;
+        }
+        if(number1 == reverse){
+            System.out.println("YES");
+        } else {
+            System.out.println("No");
+        }
+    }*/
+
+
+
     public static void main(String[] args) {
         //boolean output = false;
         //output = isLeapYear(1924);
@@ -92,5 +114,14 @@ public class Learn_Temp {
 
         /*int output = getDaysInMonth(12, 10000);
         System.out.println(output);*/
+
+        /*isPalindrome(1221);
+        isPalindrome(1321);
+        isPalindrome(786687);
+        isPalindrome(8956);
+        isPalindrome(-88);*/
+
+
+
     }
 }
