@@ -1,20 +1,20 @@
 package org.learn.basics;
 
 /**
- * In this class we are going to understand better about type value overflow
+ * In this class, we are going to understand better about type value overflow
  * and underflow.
  *
- * also few examples related to 'int,byte,short and long' they are also known
+ * Also, few examples related to 'int,byte,short and long' they are also known
  * as 'Whole numbers'.
- * note: Java treats 'int' as a default whole number.
+ * Note: Java treats 'int' as a default whole number.
  *
  * Simply we are creating int type variables and checking its max and min value.
- * then to trying to add max + 1 and min -1.
+ * Then to trying to add max + 1 and min -1.
  *
  * Explanation: if we try to put a value larger than the maximum value in java,
  * or a value smaller than the minimum value in java, then we will get an
- * 'Overflow' in case of maximum and 'Underflow' in case of minimum.
- * This behaviour is called integer-wraparound.
+ * 'Overflow' in case of maximum and 'Underflow' in case of a minimum.
+ * This behavior is called integer-wraparound.
  */
 public class Learn1_IntByteShortLongPrimitiveTypes {
     public static void main(String[] args) {
@@ -33,22 +33,22 @@ public class Learn1_IntByteShortLongPrimitiveTypes {
         /*
         If you have given 'int' value more than its max or less than its min, then you will
         get a compile time error saying Integer value is too large.
-        for checking uncomment the below 2 lines and compile the code.
+        For checking uncommenting the below 2 lines and compile the code.
          */
-        //int myMaxIntValue3 = 2147483648; //Integer value is too large.
-        //int myMinIntValue3 = -2147483649; //Integer value is too large.
+        //Int myMaxIntValue3 = 2147483648; //Integer value is too large.
+        //Int myMinIntValue3 = -2147483649; //Integer value is too large.
 
-        /**
+        /*
          * In Java SE 7 and later, any number of underscore characters (_) can appear anywhere
          * between digits in a numerical literal, which can improve the readability of your code.
-         * for better understanding of underscore between the decimals follow the java.doc
+         * For better understanding of underscore between the decimals follow the java.doc
          * https://docs.oracle.com/javase/8/docs/technotes/guides/language/underscores-literals.html
          */
         int myValue1 = 1_190;
         int myValue2 = 1_0;
         System.out.println("Values with underscore between digits after sum is : " + (myValue1 + myValue2));
 
-        /**
+        /*
          * Another great example to understand Overflow
          * Here 'value'(variable type int) is assigned with
          * 2147483647 (2147483647 - 1), after the for loop runs
@@ -78,9 +78,9 @@ public class Learn1_IntByteShortLongPrimitiveTypes {
         System.out.println("myMinLongValue is : " + myMinLongValue); // output: -9223372036854775808
 
         long myLongValue1 = 2147483647;
-        /**
+        /*
          * if you declare long value without suffix 'L', it considers under Integer value.
-         * to check uncomment the below line and compile the code.
+         * to check uncommenting the below line and compile the code.
          */
         //long myLongValue2 = 2147483648; // compile time error: Integer number too large
         long myLongValue3 = 2147483648674576L;
