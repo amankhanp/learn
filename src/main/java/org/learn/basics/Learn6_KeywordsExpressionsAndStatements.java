@@ -1,11 +1,11 @@
 package org.learn.basics;
 
 /**
- * In this class we learn about Java Keywords and Expressions.
- * note: Reserved keywords cannot use them as identifiers in the program.
+ * In this class, we learn about Java Keywords and Expressions.
+ * Note: Reserved keywords cannot use them as identifiers in the program.
  *
  * The keywords 'const' and 'goto' are reserved, even though they are not currently used.
- * true, false, and null might seem like keywords, but they are actually literals;
+ * True, false, and null might seem like keywords, but they are actually literals;
  * you cannot use them as identifiers in your programs.
  *
  * Read more: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
@@ -15,9 +15,8 @@ public class Learn6_KeywordsExpressionsAndStatements {
     public static void main(String[] args) {
         /**
          * Examples-1 is to describe Expressions.
-         * In the below syntax, "kilometers = (100 * 1.689344)" is known
-         * as expression.
-         * if we include data type whole thing is called java statement.
+         * In the below syntax, "kilometers = (100 * 1.689344)" is known as expression.
+         * If we include a data type, the whole thing is called java statement.
          * An expression contains variables, values & operators, but java
          * reserved keywords and semi-column are not part of the expressions.
          */
