@@ -1,7 +1,7 @@
 package org.learn.basics;
 
 /**
- * In this class we are going to learn about 'Char' and 'Boolean' Primitive types.
+ * In this class, we are going to learn about 'Char' and 'Boolean' Primitive types.
  *
  * --- About char ---
  * A char occupies two bytes of memory, or 16 bits and thus has a width of 16. The
@@ -15,14 +15,14 @@ package org.learn.basics;
  * are needed in total to represent the entire English alphabets. But other languages
  * need more characters, and often a lot more.
  *
- * Unicode allows us to represent these languages and the way it works is that by using
- * a combination of the two bytes that a char takes up in memory it can represent and
+ * Unicode allows us to represent these languages, and the way it works is that by using
+ * a combination of the two bytes that a char takes up in memory, it can represent and
  * one of 65535 different types of characters.
  *
  * --- About boolean ---
  * A boolean value allows for two choices True or False, Yes or No, 1 or 0. In Java
- * terms we have a boolean primitive type and it can be set to two values only. true
- * or false. They are actually pretty useful and you will use them a lot when programming.
+ * terms we have a boolean primitive type, and it can be set to two values only. True
+ * or false. They are actually pretty useful, and you will use them a lot when programming.
  */
 public class Learn3_CharBooleanPrimitiveTypes {
 
